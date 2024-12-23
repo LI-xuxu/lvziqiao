@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 设置网页语言为中文 -->
+<html lang="zh-CN">
+
+<head>
+  <!-- 设置字符编码为UTF-8 -->
+  <meta charset="UTF-8">
+  <!-- 设置视口，确保在移动设备上正常显示 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO相关的元标签 -->
+  <meta name="description" content="吕子乔的个人网站 - 分享生活趣事和泡妞秘籍">
+  <meta name="keywords" content="吕子乔,爱情公寓,泡妞秘籍,爱情故事">
+  <!-- 网页标题 -->
+  <title>吕子乔的精彩世界</title>
+  <!-- 引入样式表 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- 主容器 -->
+  <div id="main-container">
+    <!-- 导航栏部分 -->
+    <nav id="main-nav">
+      <!-- 导航菜单列表 -->
+      <ul>
+        <!-- 使用锚点链接，实现页内跳转 -->
+        <li><a href="#about-me">关于我</a></li>
+        <li><a href="#pick-up-tips">泡妞秘籍</a></li>
+        <li><a href="#love-stories">爱情故事</a></li>
+        <li><a href="#classic-quotes">经典语录</a></li>
+        <li><a href="#interaction">互动交流</a></li>
+      </ul>
+    </nav>
+
+    <!-- 页面头部区域 -->
+    <header id="header">
+      <h1>吕子乔的奇幻人生</h1>
+      <!-- 副标题 -->
+      <p class="subtitle">欢迎来到我的世界，这里充满惊喜与故事~</p>
+    </header>
+
+    <!-- 个人简介区域 -->
+    <section id="about-me" class="section-container">
+      <!-- 个人资料包装器 -->
+      <div class="profile-wrapper">
+        <!-- 个人头像 -->
+        <img src="./images/ziqiao.jpg" alt="吕子乔的帅气照片" id="ziqiao-img">
+        <!-- 个人介绍文字 -->
+        <div id="about-me-text">
+          <h2>关于我</h2>
+          <p>嘿！我是吕子乔，江湖人称吕小布，穿梭在爱情公寓的潇洒型男一枚。爱情、冒险，我全都要，生活嘛，就是要过得多姿多彩！</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 泡妞秘籍部分 -->
+    <section id="pick-up-tips">
+      <h2>吕小布的泡妞秘籍（仅供娱乐哦）</h2>
+      <!-- 每个秘籍都是一个独立的文章 -->
+      <article>
+        <h3>秘籍一：眼神交流</h3>
+        <p>用你那深邃又略带神秘的眼神，直勾勾地看着对方，仿佛能看穿她的灵魂，然后突然露出一个坏坏的微笑，这时候，嘿嘿，成功率就蹭蹭往上涨啦！当然，前提是你得有我这般帅气的颜值哦~</p>
+      </article>
+      <!-- 更多秘籍... -->
+    </section>
+
+    <!-- 互动表单区域 -->
+    <section id="interaction" class="section-container">
+      <h2>和我互动一下呗</h2>
+      <!-- 联系表单 -->
+      <form id="message-form" class="contact-form">
+        <!-- 名字输入组 -->
+        <div class="form-group">
+          <label for="name">你的名字：</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <!-- 邮箱输入组 -->
+        <div class="form-group">
+          <label for="email">邮箱：</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <!-- 留言输入组 -->
+        <div class="form-group">
+          <label for="message">给我留言吧：</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <!-- 提交按钮 -->
+        <button type="submit" class="submit-btn">发送留言</button>
+      </form>
+    </section>
+
+    <!-- 页脚区域 -->
+    <footer id="footer">
+      <!-- 社交媒体链接 -->
+      <div class="social-links">
+        <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
+        <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+        <a href="#" title="抖音"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <!-- 版权信息 -->
+      <p>版权所有 &copy; 2024 吕子乔  |  爱情公寓出品</p>
+    </footer>
+  </div>
+  
+  <!-- 引入Font Awesome图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- 引入JavaScript文件 -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

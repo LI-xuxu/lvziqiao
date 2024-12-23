@@ -1,0 +1,148 @@
+/* 重置所有元素的默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 使用更合理的盒模型 */
+}
+
+/* 设置基础页面样式 */
+body {
+  font-family: "Microsoft YaHei", Arial, sans-serif; /* 优先使用微软雅黑字体 */
+  line-height: 1.6; /* 设置合适的行高 */
+  background-color: #f0f2f5; /* 设置页面背景色 */
+}
+
+/* 主容器样式 */
+#main-container {
+  max-width: 1000px; /* 限制最大宽度 */
+  margin: 20px auto; /* 水平居中 */
+  background-color: #fff; /* 白色背景 */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  border-radius: 12px; /* 圆角边框 */
+  padding: 20px; /* 内边距 */
+}
+
+/* 导航栏样式 */
+#main-nav {
+  background-color: #fff;
+  padding: 15px 0;
+  position: sticky; /* 粘性定位 */
+  top: 0; /* 固定在顶部 */
+  z-index: 100; /* 确保导航栏始终在最上层 */
+  border-bottom: 1px solid #eee; /* 底部边框 */
+}
+
+/* 导航菜单列表样式 */
+#main-nav ul {
+  list-style: none; /* 移除列表样式 */
+  display: flex; /* 弹性布局 */
+  justify-content: center; /* 水平居中 */
+  gap: 30px; /* 项目间距 */
+}
+
+/* 导航链接样式 */
+#main-nav a {
+  text-decoration: none; /* 移除下划线 */
+  color: #333;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 导航链接悬停效果 */
+#main-nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 页面头部样式 */
+#header {
+  text-align: center;
+  background: linear-gradient(135deg, #333 0%, #666 100%); /* 渐变背景 */
+  color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* 头部标题样式 */
+#header h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 文字阴影 */
+}
+
+/* 副标题样式 */
+.subtitle {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* 表单样式 */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 表单组样式 */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* 表单标签样式 */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* 表单输入框样式 */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* 提交按钮样式 */
+.submit-btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* 提交按钮悬停效果 */
+.submit-btn:hover {
+  background-color: #555;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  /* 在小屏幕上调整布局 */
+  .profile-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #header {
+    padding: 20px;
+  }
+  
+  #header h1 {
+    font-size: 2em;
+  }
+}
